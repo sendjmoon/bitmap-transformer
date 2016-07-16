@@ -2,8 +2,9 @@
   "name": "bitmap-transformer",
   "version": "1.0.0",
   "description": "An application using Node buffers to transform the colors of a bitmap image by manipulating binary data.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
   "dependencies": {
