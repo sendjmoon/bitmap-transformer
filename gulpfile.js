@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const eslint = require('gulp-eslint');
-const mocha = require('mocha');
+const mocha = require('gulp-mocha');
 
 var allFiles = ['**/*.js', '!./node_modules/**'];
 var testFiles = ['./test/**/*.js'];
