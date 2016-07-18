@@ -16,6 +16,7 @@
     "mocha": "^2.5.3"
   },
   "scripts": {
+    "start": "gulp",
     "test": "mocha"
   },
   "repository": {
