@@ -26,7 +26,6 @@ describe('creates a new bitmap file with the color inverted', function() {
     expect(fileData.length).to.eql(1);
     expect(restoredFileData.length).to.eql(1);
     expect(fileData).to.eql(restoredFileData);
-    debugger;
     done();
   });
 });
