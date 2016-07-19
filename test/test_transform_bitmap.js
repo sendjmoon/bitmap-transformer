@@ -1,16 +1,15 @@
 const expect = require('chai').expect;
 const fs = require('fs');
 
-const invertBitmap = require('../lib/invert_bitmap');
-const restoreBitmap = require('../lib/restore_bitmap');
+const transformBitmap = require('../lib/transform_bitmap');
 
 describe('creates a new bitmap file with the color inverted', function() {
   var fileData = [];
   var restoredFileData = [];
 
   before(function(done) {
-    invertBitmap(__dirname + '/palette-bitmap.bmp');
-    restoreBitmap(__dirname + '/inverted-palette-bitmap.bmp');
+    transformBitmap(__dirname + '/palette-bitmap.bmp', transformBitmap.invert, 'new');
+    transformBitmap(__dirname + '/new-palette-bitmap.bmp', transformBitmap.invert, 'restored');
     fs.readFile(__dirname + '/palette-bitmap.bmp', function(err, data) {
       if(err) console.log(err);
       fileData.push(data.toString());
