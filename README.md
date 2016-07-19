@@ -32,6 +32,9 @@ This Bitmap Transformer requires all files from the master branch to be pulled t
 chai `npm install -D chai`
 
 mocha `npm install -D mocha`
+
 gulp `npm install -D gulp`
+
 gulp-eslint `npm install -D gulp-eslint`
+
 gulp-mocha `npm install -D gulp-mocha`
