@@ -29,6 +29,8 @@ transformBitmap.invert = function(startIndex, finishIndex, data) {
 This Bitmap Transformer requires all files from the master branch to be pulled to a local machine. It also has dev dependencies for additional node packages used to create and test the results.
 
 ### Dev Dependencies
-```
-const fs = require('fs');
-```
+chai `npm install -D chai`
+mocha `npm install -D mocha`
+gulp `npm install -D gulp`
+gulp-eslint `npm install -D gulp-eslint`
+gulp-mocha `npm install -D gulp-mocha`
