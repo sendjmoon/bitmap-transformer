@@ -4,7 +4,6 @@
   "description": "An application using Node buffers to transform the colors of a bitmap image by manipulating binary data.",
   "main": "/lib/invert_bitmap.js",
   "directories": {
-    "lib": "lib",
     "test": "test"
   },
   "dependencies": {},
