@@ -2,7 +2,7 @@
 This is a Node.js application used to transform the colors of a bitmap image. Currently, it has the ability to invert the color palette of a given image and output the inverted result.
 
 ## Code Example
-Below is a snippet of code for one of the modules. It reads buffer data from a file using the file share module. Then, it runs the designated transformation on the image.
+Below is a snippet of code for one of the modules. It reads buffer data from a file using the file system module of Node. Then, it uses a callback function to specify the designated transformation. Finally, it accepts a string to name the new file with.
 
 
 ```javascript
@@ -23,4 +23,12 @@ transformBitmap.invert = function(startIndex, finishIndex, data) {
     num++;
   }
 };
+```
+
+## Installation
+This Bitmap Transformer requires all files from the master branch to be pulled to a local machine. It also has dev dependencies for additional node packages used to create and test the results.
+
+### Dev Dependencies
+```
+const fs = require('fs');
 ```
