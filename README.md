@@ -5,7 +5,8 @@ This is a Node.js application used to transform the colors of a bitmap image. Cu
 Below is a snippet of code for one of the modules. It reads buffer data from a file using the file share module. Then, it runs the designated transformation on the image.
 
 
-``` const fs = require('fs');
+```javascript
+ const fs = require('fs');
 
 var transformBitmap = module.exports = exports = function(file, cb, newFileName) {
   fs.readFile(file, function(err, data) {
@@ -21,4 +22,5 @@ transformBitmap.invert = function(startIndex, finishIndex, data) {
     if (num % 4 !== 0) data[i] = 255 - data[i];
     num++;
   }
-}; ```
+};
+```
