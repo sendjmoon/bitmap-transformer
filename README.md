@@ -43,3 +43,6 @@ gulp-mocha `npm install -D gulp-mocha`
 To run the test from the terminal's CLI, simply type `npm start`. This will use `gulp` to run an `eslint` test on all files while also running a `mocha` test on all test files to verify results.
 
 The test asserts a match in color from the palette of the original image, as well as the inverted image, and finally the image restored from the invert.
+
+## Authors
+James Moon & Gurpreet Singh
