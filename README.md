@@ -1,5 +1,5 @@
 # Bitmap Transformer
-This project uses Node.js to change a bitmap image's color by manipulating hex values collected from buffered data. Currently, it has the ability to invert the color palette of a given image and output the inverted result.
+This project uses Node.js and asynchronous code to change a bitmap image's color by manipulating hex values collected from buffered data. Currently, it has the ability to invert the color palette of a given image and output the inverted result.
 
 ## Code Example
 Below is a snippet of code for one of the modules. It reads buffer data from a file using the file system module of Node. Then, it uses a callback function to specify the designated transformation. Finally, it accepts a string to name the new file with.
