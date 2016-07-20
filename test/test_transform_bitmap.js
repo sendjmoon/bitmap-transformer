@@ -39,7 +39,7 @@ describe('creates a new bitmap file with the color inverted', function() {
 
   it('the restored bitmap image should match the original bitmap image', function(done) {
     for (var i = 0; i < 3; i++) {
-      expect(colorOne[3]).to.eql(colorRestore[i]);
+      expect(colorOne[i]).to.eql(colorRestore[i]);
       expect(colorNew[i]).to.eql(255 - colorOne[i]);
     }
     expect(colorOne[3]).to.eql(colorNew[3]).to.eql(colorRestore[3]);
