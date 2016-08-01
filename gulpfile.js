@@ -11,6 +11,8 @@ gulp.task('lint', () => {
   .pipe(eslint.format());
 });
 
+// If you don't have the eslint options listed out in your gulp file, you need to provide an eslintrc file with your project.
+
 gulp.task('test:test', () => {
   return gulp.src(testFiles)
   .pipe(mocha());
